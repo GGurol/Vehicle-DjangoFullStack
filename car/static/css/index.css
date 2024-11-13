@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100vw;
+    height: auto;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+.carousel-item img{
+    object-fit:cover;
+    object-position: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.cpyname{
+    /* font-size: 2rem;    */
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font:italic;
+}
+
+.vehname{
+    margin-top: 20px;
+}
+
+.proname{
+    font-size: 50px;
+}
+
+.Originalprice{
+    color: rgb(254, 249, 249);
+    border: 2px solid;
+    padding: 2px;
+    background-color:rgb(240, 47, 47);
+    border:none;
+    border-radius: 8px;
+}
+
+.sellprice{
+    color: rgb(18, 17, 17);
+    border: 2px solid;
+    padding: 2px ;
+    background-color:rgb(19, 184, 10);
+    border:none;
+    border-radius: 8px;
+}
+
+strike{
+    color:black;
+}
+
+.product_details{
+    font-family: sans-serif;
+}
+
+.cardcol{
+    background-color:rgb(222, 200, 173) ;
+}
+
+

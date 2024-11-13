@@ -1,0 +1,40 @@
+{% extends "master.html" %} 
+
+{% block title %} Car | page {% endblock title %}
+{%block content %}
+
+{% comment %} Navbar {% endcomment %}
+{% include "inc/navbar.html" %}
+
+{% comment %} veh_cataGories {% endcomment %}
+<div class="container ">
+
+  <div class="col-12 d-flex flex-column flex-md-wrap flex-md-row justify-content-around align-items-center">
+
+  {% for type in types %}
+
+    <div class="card col-10 col-md-5 my-3 p-3 bg-dark text-light" style="border-radius:15px;" >
+
+      <a href="veh_details/{{type.id}}" style="border-radius:15px;color:white">
+
+      <img
+        src="{{type.Image.url}}"
+        class="img-fluid card-img-top"
+        style="height:20em;border-radius:15px;"
+        alt="{{type.company_name}}"
+      />
+
+      <div class="card-body">
+
+        <p class="cpyname fs-md-2 fs-4 col-12 col-md-0 card-text text-center me-2 text-uppercase">{{type.company_name}}</p>
+
+      </div>
+    </a>
+    </div>
+
+
+  {% endfor %}
+</div>
+</div>
+
+{% endblock content %}

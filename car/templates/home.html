@@ -1,0 +1,47 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+{% block title %} home | page {% endblock title %}   
+
+
+
+{% block content %}
+
+{% comment %} NAVBAR {% endcomment %}
+{% include "inc/navbar.html" %}
+
+{% comment %} SLIDER COUROSIL {% endcomment %}
+{% include 'inc/slider.html' %}
+
+<hr size="10px" color="#000000">
+
+{% comment %} CATAGORIES {% endcomment %}
+<div class="col-12 my-5">
+  <div class="col-12 d-flex flex-column flex-md-row justify-content-around align-items-center">
+
+    <h2 class="bg-dark text-light p-3">Vehicle Catagories</h2>
+   
+   {% for catagory in catagories %}
+   
+   
+    <div class="card bg-dark my-md-0 my-2" style="width:18rem;">
+
+    <a href="catagory/{{catagory.id}}" style="text-decoration: none;">
+     
+    <img src="{{catagory.Image.url}}" class="img-fluid " style="border-radius:15px"  alt="">
+
+      <div class="card-body">
+        <h5 class="card-title text-center text-light ">{{catagory.Catagory_name}}</h5>
+      </div>
+    </a>
+    </div>
+
+  
+   {% endfor %}
+  </div>
+ </div>
+
+{% endblock content %}
+
+

@@ -1,0 +1,43 @@
+{% extends "master.html" %}
+
+{% block title %} Product Details | page {% endblock title %} 
+
+{% block content %} 
+
+{% include "inc/navbar.html" %}
+
+<div class="container">
+    <div class="col-12 d-flex flex-column flex-md-wrap flex-md-row justify-content-around align-items-center">
+
+      <div class="col-md-6">
+        <img
+          src="{{products.Image.url}}"
+          class="col-md-10 col-12 proimg img-fluid  mt-5"
+          alt="{{products.name}}"
+          style="height: 400px"
+        />
+      </div>
+
+      <div class="col-md-6 col-12 my-md-0 my-4">
+        <div class="product_details">
+          <h5 class="proname">{{products.name}}</h5>
+          <hr size="10px" />
+          <p class="prodesc">{{products.description}}</p>
+        </div>
+        <hr size="10px" color="red" />
+        <div
+          class="price d-flex ms-2 p-2 justify-content-between align-items-center mb-md-0 mb-5"
+        >
+          <h4 class="Originalprice me-2 p-1">
+            <span><strike>Rs.₹ {{products.original_price}}</strike></span>
+          </h4>
+          <h4 class="sellprice me-5 p-1">
+            <span class="">Rs.₹ {{products.selling_price}}</span>
+          </h4>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+{% endblock content %}
