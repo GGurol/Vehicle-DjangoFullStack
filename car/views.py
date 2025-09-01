@@ -26,6 +26,6 @@ def productDetails(request,id):
 def allDetails(request):
     items = Vehicle_Details.objects.all()
     context= {'items':items,'veh_details':False}
-    return render(request,'allveh.html',context)
+    return render(request,'allVeh.html',context)
 
 
