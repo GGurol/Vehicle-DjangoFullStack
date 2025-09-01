@@ -7,20 +7,12 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
 
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="{% url 'home' %}">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'CarType' '1' %}">CarTypes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'CarType' '2' %}">BikeTypes</a>
-          </li>
-          {% if veh_details %}
-          <li class="nav-item">
-            <a class="nav-link" href="all_details">AllVehicles</a>
-          </li>
-          {% endif %}
+  {% for category in vehicle_categories %}
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'CarType' category.id %}">{{ category.Catagory_name }}</a>
+  </li>
+  {% endfor %}
+          
 
         </ul>
       </div>

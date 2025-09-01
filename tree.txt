@@ -1,0 +1,229 @@
+.
+├── car
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   ├── 0002_vehicle_catagory_image.py
+│   │   ├── 0003_vehicle_type_image.py
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       ├── 0001_initial.cpython-311.pyc
+│   │       ├── 0002_vehicle_catagory_image.cpython-311.pyc
+│   │       ├── 0003_vehicle_type_image.cpython-311.pyc
+│   │       └── __init__.cpython-311.pyc
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── admin.cpython-311.pyc
+│   │   ├── apps.cpython-311.pyc
+│   │   ├── __init__.cpython-311.pyc
+│   │   ├── models.cpython-311.pyc
+│   │   ├── urls.cpython-311.pyc
+│   │   └── views.cpython-311.pyc
+│   ├── static
+│   │   ├── css
+│   │   │   ├── bootstrap.min.css
+│   │   │   └── index.css
+│   │   ├── images
+│   │   │   ├── bg.jpg
+│   │   │   ├── bike1.jpg
+│   │   │   ├── bike2.jpg
+│   │   │   ├── bike3.jpg
+│   │   │   ├── car1.jpg
+│   │   │   ├── car2.jpg
+│   │   │   ├── car3.jpg
+│   │   │   ├── home1.jpg
+│   │   │   └── home2.jpg
+│   │   └── js
+│   │       └── bootstrap.bundle.min.js
+│   ├── templates
+│   │   ├── allVeh.html
+│   │   ├── catagories.html
+│   │   ├── home.html
+│   │   ├── inc
+│   │   │   ├── footer.html
+│   │   │   ├── navbar.html
+│   │   │   └── slider.html
+│   │   ├── master.html
+│   │   ├── productDetails.html
+│   │   └── vehDetails.html
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── carImages
+│   ├── 2025-motorcycles.jpg
+│   ├── amazerightfrontthreequarter9_8O0gTho.jpg
+│   ├── amazerightfrontthreequarter9.jpg
+│   ├── arora-hector-450-t3-onnroad-atv.jpg
+│   ├── atv.jpeg
+│   ├── bailey-mahon-dCh04SRuOuc-unsplash.jpg
+│   ├── bailey-mahon-dCh04SRuOuc-unsplash_qqb2uJN.jpg
+│   ├── blake-meyer-CRNbHjNaljo-unsplash_43O2aG6.jpg
+│   ├── blake-meyer-CRNbHjNaljo-unsplash.jpg
+│   ├── blake-meyer-CRNbHjNaljo-unsplash_v19xhBE.jpg
+│   ├── bmw-r-1200-gs-17-18-r-1250-gs-19_54172_2.jpg
+│   ├── car.jpeg
+│   ├── cf-moto-cforce-1000-c5208b.jpg
+│   ├── citycityrightfrontthreequarter_54rvnCH.jpg
+│   ├── citycityrightfrontthreequarter.jpg
+│   ├── cityhybridehevcityhybridehevrightfrontthreequarter.jpg
+│   ├── david-cephei-2GU1YY4LGaA-unsplash.jpg
+│   ├── david-cephei-2GU1YY4LGaA-unsplash_tmT82lV.jpg
+│   ├── dhiva-krishna-X16zXcbxU4U-unsplash_3aouzSM.jpg
+│   ├── dhiva-krishna-X16zXcbxU4U-unsplash.jpg
+│   ├── elevateelevaterightfrontthreequarter_1.jpg
+│   ├── elevateelevaterightfrontthreequarter_1_Zv2hCW0.jpg
+│   ├── elevateelevaterightfrontthreequarter.jpg
+│   ├── elevateelevaterightfrontthreequarter_XhiaqBe.jpg
+│   ├── fabio-spinelli-cPpmFa1OiGU-unsplash_0v8F5Rp.jpg
+│   ├── fabio-spinelli-cPpmFa1OiGU-unsplash.jpg
+│   ├── fordtractor-4.png
+│   ├── gijs-coolen-n4xLp0i584w-unsplash_egL887H.jpg
+│   ├── gijs-coolen-n4xLp0i584w-unsplash.jpg
+│   ├── harley-davidson-eeTJKC_wz34-unsplash.jpg
+│   ├── harley-davidson-eeTJKC_wz34-unsplash_uDBuQJv.jpg
+│   ├── honda-2.jpg
+│   ├── jakub-sisulak-GqfRtLnGpmI-unsplash_d5DTtN8.jpg
+│   ├── jakub-sisulak-GqfRtLnGpmI-unsplash.jpg
+│   ├── jakub-sisulak-GqfRtLnGpmI-unsplash_pDnZMAP.jpg
+│   ├── jerin-cherian-gm794mIod9E-unsplash.jpg
+│   ├── joey-banks-YApiWyp0lqo-unsplash.jpg
+│   ├── joey-banks-YApiWyp0lqo-unsplash_MZ5yMHG.jpg
+│   ├── josh-berquist-_4sWbzH5fp8-unsplash.jpg
+│   ├── josh-berquist-_4sWbzH5fp8-unsplash_W0IZZjL.jpg
+│   ├── julian-paolo-dayag-hDIBxbnMryo-unsplash_DM4cWIc.jpg
+│   ├── julian-paolo-dayag-hDIBxbnMryo-unsplash_IeNfYkX.jpg
+│   ├── julian-paolo-dayag-hDIBxbnMryo-unsplash.jpg
+│   ├── kieran-sheehan-ZWCgHk0N8bk-unsplash.jpg
+│   ├── kieran-sheehan-ZWCgHk0N8bk-unsplash_wBmCeQx.jpg
+│   ├── kirill-petropavlov-f_gCjlNcVWo-unsplash.jpg
+│   ├── k-k-oSSOYHqj3Uk-unsplash_C5QBJ2z.jpg
+│   ├── k-k-oSSOYHqj3Uk-unsplash.jpg
+│   ├── k-k-oSSOYHqj3Uk-unsplash_s2deW9X.jpg
+│   ├── kundan-bana-GRhrtoaWDNg-unsplash_ctPRr3G.jpg
+│   ├── kundan-bana-GRhrtoaWDNg-unsplash.jpg
+│   ├── lino-C2SzUyg3PPQ-unsplash_I5zpCSh.jpg
+│   ├── lino-C2SzUyg3PPQ-unsplash.jpg
+│   ├── lino-lgYWrWl_7Fs-unsplash.jpg
+│   ├── lino-lgYWrWl_7Fs-unsplash_pzRL2Zv.jpg
+│   ├── lino-lgYWrWl_7Fs-unsplash_xJxIwHr.jpg
+│   ├── mercedes.jpeg
+│   ├── mohammed-farman-s-foh6BMAu2UQ-unsplash.jpg
+│   ├── mondial-venture-200-atv.jpg
+│   ├── motorcycle.jpeg
+│   ├── pexels-alexander-pollinger-137430820-10566898.jpg
+│   ├── pexels-alexander-pollinger-137430820-10566898_uiMJfuw.jpg
+│   ├── pexels-alexander-pollinger-137430820-10566898_vIld9i4.jpg
+│   ├── pexels-anewevisual-9814981.jpg
+│   ├── pexels-anewevisual-9814981_SQHOMo3.jpg
+│   ├── pexels-avinashpatel-544542_HySIHax.jpg
+│   ├── pexels-avinashpatel-544542.jpg
+│   ├── pexels-avinashpatel-544542_mwFbI87.jpg
+│   ├── pexels-broderick-armbrister-1186919-6462662_jg10QwW.jpg
+│   ├── pexels-broderick-armbrister-1186919-6462662.jpg
+│   ├── pexels-derice-jason-fahnkow-745824-4392662.jpg
+│   ├── pexels-derice-jason-fahnkow-745824-4392662_mQG8s0b.jpg
+│   ├── pexels-ekoagalarov-22610576.jpg
+│   ├── pexels-ekoagalarov-22610576_XLWIGLk.jpg
+│   ├── pexels-emreaslihak-16273120_0tDIhwO.jpg
+│   ├── pexels-emreaslihak-16273120.jpg
+│   ├── pexels-garvin-st-villier-719266-3972755.jpg
+│   ├── pexels-garvin-st-villier-719266-3972755_M6ldwLv.jpg
+│   ├── pexels-garvin-st-villier-719266-3972755_v5VsNaw.jpg
+│   ├── pexels-hardeep-22710922.jpg
+│   ├── pexels-hardeep-22710922_qsWrbI9.jpg
+│   ├── pexels-isa-khakimov-719700147-18319674.jpg
+│   ├── pexels-isa-khakimov-719700147-18319674_JxNIvVI.jpg
+│   ├── pexels-jakewymoore-10905512_3wk3Nam.jpg
+│   ├── pexels-jakewymoore-10905512.jpg
+│   ├── pexels-jarne-aerts-3175149-5976596_F2PT6zq.jpg
+│   ├── pexels-jarne-aerts-3175149-5976596.jpg
+│   ├── pexels-javon-swaby-197616-2779447.jpg
+│   ├── pexels-jay-johnson-3719210-6335848.jpg
+│   ├── pexels-jay-johnson-3719210-6335848_zhcQhxu.jpg
+│   ├── pexels-kelly-1179532-3065602_iutXjdY.jpg
+│   ├── pexels-kelly-1179532-3065602.jpg
+│   ├── pexels-maurice-lustig-1475620-2896135_eaJtljk.jpg
+│   ├── pexels-maurice-lustig-1475620-2896135.jpg
+│   ├── pexels-mikebirdy-112460_dYm8qxY.jpg
+│   ├── pexels-mikebirdy-112460_eMN44MM.jpg
+│   ├── pexels-mikebirdy-112460_iv0aSwy.jpg
+│   ├── pexels-mikebirdy-112460.jpg
+│   ├── pexels-mikebirdy-1335077.jpg
+│   ├── pexels-mikebirdy-1335077_vxXMOvU.jpg
+│   ├── pexels-mikebirdy-136872_IwKodEz.jpg
+│   ├── pexels-mikebirdy-136872.jpg
+│   ├── pexels-mikebirdy-193991.jpg
+│   ├── pexels-mikebirdy-193991_tNeSuRc.jpg
+│   ├── pexels-mikebirdy-195954_f4TLYk7.jpg
+│   ├── pexels-mikebirdy-195954.jpg
+│   ├── pexels-mikebirdy-2365572_Iitezrd.jpg
+│   ├── pexels-mikebirdy-2365572.jpg
+│   ├── pexels-mikebirdy-244206.jpg
+│   ├── pexels-mikebirdy-244206_TgAXhVs.jpg
+│   ├── pexels-mikebirdy-3729464_cwwZ6m9.jpg
+│   ├── pexels-mikebirdy-3729464.jpg
+│   ├── pexels-mikebirdy-5730166.jpg
+│   ├── pexels-mikebirdy-810357.jpg
+│   ├── pexels-mikebirdy-810357_pMl7Lga.jpg
+│   ├── pexels-mikebirdy-97355.jpg
+│   ├── pexels-mikebirdy-97355_ylbamYq.jpg
+│   ├── pexels-mikebirdy-99435_0nDHILB.jpg
+│   ├── pexels-mikebirdy-99435.jpg
+│   ├── pexels-mikebirdy-99435_USCEUX1.jpg
+│   ├── pexels-pixabay-39855_jcfWDaU.jpg
+│   ├── pexels-pixabay-39855.jpg
+│   ├── pexels-rpnickson-3166786_aBagIWe.jpg
+│   ├── pexels-rpnickson-3166786.jpg
+│   ├── pexels-ruvim-1807011-3541550_4NcSMXE.jpg
+│   ├── pexels-ruvim-1807011-3541550.jpg
+│   ├── pexels-ryan-west-838532-1719647.jpg
+│   ├── pexels-ryan-west-838532-1719647_OjrvpIo.jpg
+│   ├── pexels-sofianunezph-18167337.jpg
+│   ├── pexels-sofianunezph-18167337_sftQt0d.jpg
+│   ├── pexels-talhaytan-19413542_iRlWNqr.jpg
+│   ├── pexels-talhaytan-19413542.jpg
+│   ├── pexels-tony-boyd-513947829-16883139_biCyjqh.jpg
+│   ├── pexels-tony-boyd-513947829-16883139.jpg
+│   ├── pexels-tony-boyd-513947829-16883139_sHjUL1h.jpg
+│   ├── pexels-trvlust-3221163_Im4Xs6Y.jpg
+│   ├── pexels-trvlust-3221163.jpg
+│   ├── pexels-wearelivingart-7559054.jpg
+│   ├── pexels-wearelivingart-7559054_QwiVamx.jpg
+│   ├── pexels-zhuzichun-229759257-12086412_3qUqn0C.jpg
+│   ├── pexels-zhuzichun-229759257-12086412.jpg
+│   ├── pixel-blast-Nynx8Z9Y-mQ-unsplash.jpg
+│   ├── rahul-pabolu-KGARUPgH5h8-unsplash.jpg
+│   ├── rahul-pabolu-M3_KSMoJrnE-unsplash.jpg
+│   ├── sabeel-mhmd-fVXo0wV0P38-unsplash.jpg
+│   ├── sanjeev-nagaraj-E06AY-OUD7g-unsplash_J25rIcl.jpg
+│   ├── sanjeev-nagaraj-E06AY-OUD7g-unsplash.jpg
+│   ├── siddhardha-babu-pMlSWYOp6QA-unsplash.jpg
+│   ├── tim-meyer-GIm7wxiAZys-unsplash.jpg
+│   ├── truck.jpeg
+│   ├── tyler-clemmensen-c7Gay8ttJS0-unsplash.jpg
+│   ├── wrvnewwrvleftfrontthreequarter_3aKmJaV.jpg
+│   ├── wrvnewwrvleftfrontthreequarter.jpg
+│   ├── wrvnewwrvleftfrontthreequarter_z1KbUQA.jpg
+│   └── zamirul-roslan-wwIWZwVJgBc-unsplash.jpg
+├── Carproject
+│   ├── asgi.py
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-311.pyc
+│   │   ├── settings.cpython-311.pyc
+│   │   ├── urls.cpython-311.pyc
+│   │   └── wsgi.cpython-311.pyc
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── db.sqlite3
+├── docker-compose.yml
+├── Dockerfile
+├── manage.py
+├── README.md
+├── requirements.txt
+└── tree.txt
+
+14 directories, 213 files
