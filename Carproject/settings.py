@@ -54,7 +54,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'car.context_processors.vehicle_categories_processor',
-            ],
+            ], # <-- This closing bracket was missing
         },
     },
 ]
