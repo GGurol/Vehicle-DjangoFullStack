@@ -26,7 +26,7 @@ docker compose exec -T db mysql -u user -ppassword mydatabase < vehicle.sql
 Restart docker: ( We are using stop followed by start instead of restart to avoid timing issues, as it allows for a cleaner shutdown and startup cycle. )
 ```
 docker compose stop 
-docekr compose start
+docker compose start
 ```
 You can create admin:
 ```
